@@ -1,5 +1,53 @@
 body{
-	background-color: #000;
+	background-color: #191015;
+}
+
+.bigBox{
+  /*background:#33202A;*/
+  height: 80%;
+}
+
+.header{
+  margin-top: 0;
+}
+
+.titleBox{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  padding: 2% 0;
+  height: auto;
+  width:100%;
+  background-color: #F7AEF8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.title{
+  margin:auto;
+  color: #191015;
+}
+
+
+.buttons{
+  background: #ECC209;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.filterButton{
+  background: #F9DC5C;
+  color: #191015;
+  padding: 1%;
+  border-radius: 20%;
+  border:0;
+  margin: 2% auto;
 }
 
 .randomGrid{
@@ -41,17 +89,21 @@ body{
 	text-align: center;
 }
 .hoverHeading{
+  padding: 1%;
 	font-size:16px;
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	background-color: #000000;
+	background-color: #8B2F96;
+  color: #FBD9FC;
 	opacity: 0.7;
 }
 .hoverText{
+  padding: 1%;
 	font-size: 14px;
 	color: white;
   font-family: 'Roboto', sans-serif;
-  background-color: #000000;
+  background-color: #8B2F96;
+  color: #FBD9FC;
   opacity: 0.7;
 }
 
