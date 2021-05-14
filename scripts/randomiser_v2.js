@@ -1,5 +1,12 @@
 //randomiser v2
 function load(){
 	let data = JSON.parse(pages)
-	console.log(data[0].pages[0].name, data[0].pages[0].imgName, data[0].pages[0].body)
+	let i=0
+	choice=Math.floor(Math.random()*(data.pages.length))
+	console.log(choice,i)
+	while(choice!=3&&i<=50){
+		i++
+		choice=Math.floor(Math.random()*(data.pages.length))
+		console.log(choice,i)
+	}
 }
