@@ -6,16 +6,26 @@
 <body>
 	<div id="titleEnter"><h1>Group title:</h1><br><input type="text" name="groupTitle" id="groupTitle"></div>
 	<br>
+	<div id="fileNameEnter"><h1>File name:</h1><br><input type="text" name="fileName" id="fileName"></div>
+	<br>
 	<div id="imgEnter"><h1>Group Image name:</h1><br><input type="text" name="groupImg" id="groupImg"></div>
 	<br>
 	<div id="bodyEnter"><h1>Group Body text:</h1><br><input type="text" name="groupBody" id="groupBody"></div>
 	<br>
 	<button id="submitButton" onclick="submit()">Submit</button>
+	<br>
+	<p id="result"></p>
 </body>
 </html>
-
+<script type="text/javascript" src="addpage.js"></script>
 <script type="text/javascript">
 	function submit(){
-		console.log(document.getElementById('groupTitle').value, document.getElementById('groupImg').value, document.getElementById('groupBody').value)
+		let title=document.getElementById('groupTitle').value;
+		let file=document.getElementById('fileName').value;
+		let img=document.getElementById('groupImg').value;
+		let body=document.getElementById('groupBody').value;
+		let result=document.getElementById('result');
+		// console.log(title,file,img,body);
+		
 	}
 </script>
