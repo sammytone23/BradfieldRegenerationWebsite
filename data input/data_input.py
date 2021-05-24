@@ -8,7 +8,7 @@ def adddata(data,inputobj):
 	data[inputobj['title']]['body']=inputobj['body']
 	return data
 
-with open('../data/data.json','w') as file:
+with open('../data/data.json','r') as file:
 	datalis=[x for x in file]
 	jsonstr=''.join(datalis)
 	data=json.loads(jsonstr)
@@ -31,4 +31,5 @@ with open('../data/data.json','w') as file:
 		print('leave input blank to exit, else check input again')
 		x=input('> ')
 	out=json.dumps(data)
-	file.write(out)
+	print(out)
+	# file.write(out)
