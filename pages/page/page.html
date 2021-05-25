@@ -72,8 +72,9 @@
 	function load(){
 		let num=Number(getQueryVariable('num'))
 		loadJSON(function(response) {
+			lis= JSON.parse(response)
 			try{
-				console.log(response[num]);
+				console.log(lis[num]);
 
 			}
 			catch(err){
