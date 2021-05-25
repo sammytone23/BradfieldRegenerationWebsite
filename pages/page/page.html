@@ -73,7 +73,7 @@
 		let num=getQueryVariable('num')
 		loadJSON(function(response) {
 			try{
-				console.log(response.indexOf(num));
+				console.log(response[num]);
 
 			}
 			catch(err){
