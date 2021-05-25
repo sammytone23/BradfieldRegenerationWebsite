@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- v2-->
+<html>
+	<head>
+		<title id="pageTitle">Something went wrong <3</title>
+		<link rel="stylesheet" type="text/css" href="../../main.css">
+	</head>
+	<body onload='load()'>
+		<div class="container">
+			<div class="header">
+				<div class="homeButton"><a href="../../index.html" class="homeLink"><img src="../../images/home.png" class="homeButtonImg"></a></div>
+				<div class="title"><h1 class="titleText">Something went wrong <3</h1></div>
+				<div class="paddingBox"></div>
+			</div>
+			<div class="body">
+				<div class="bodyImgBox"><img src="../../images/0.png" class="bodyImg"></div>
+				<div class="bodyText">
+					Something went wrong <3
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<script type="text/javascript">
+	
+	function loadJSON(callback) {
+		var xobj = new XMLHttpRequest();
+		xobj.overrideMimeType("application/json");
+
+		xobj.onreadystatechange = function () {
+				if (xobj.readyState == 4 && xobj.status == "200") {
+					// Required use of an anonymous callback as .open will NOT return 
+					// a value but simply returns undefined in asynchronous mode
+					callback(xobj.responseText);
+				} else {
+					callback("[{\"Nothing\"}]");
+				}
+			};
+
+		xobj.open('GET', '../../data/data.json', true);
+		// Maybe you require use of an unknown origin.
+		/*xobj.setRequestHeader("Access-Control-Allow-Origin","*");*/
+		xobj.send(null);  
+	};
+
+
+
+	function getQueryVariable(variable){
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i=0;i<vars.length;i++) {
+			var pair = vars[i].split("=");
+			if(pair[0] == variable){return pair[1];}
+		}
+		return(false);
+	}
+
+	function load(){
+		let num=getQueryVariable('num')
+		loadJSON(function(response) {
+			try{
+				console.log(response)
+			}
+			catch(err){
+				console.error(err)
+			}
+		});
+
+	}
+
+</script>
