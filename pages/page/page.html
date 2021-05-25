@@ -73,13 +73,15 @@
 		let num=Number(getQueryVariable('num'))
 		loadJSON(function(response) {
 			console.log(response)
-			lis= JSON.parse(response)
-			try{
-				console.log(lis[num]);
+			if (response!="[{\"Nothing\"}]"){
+				lis= JSON.parse(response)
+				try{
+					console.log(lis[num]);
 
-			}
-			catch(err){
-				console.error(err);
+				}
+				catch(err){
+					console.error(err);
+				}
 			}
 		});
 
