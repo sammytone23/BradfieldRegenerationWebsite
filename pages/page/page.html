@@ -26,10 +26,10 @@
 <script type="text/javascript">
 	
 	function setText(dic){
-		let title=document.getObjectById('pageTitle');
-		let heading=document.getObjectById('titleText');
-		let img=document.getObjectById('pageTitle');
-		let body=document.getObjectById('bodyText');
+		let title=document.getElementById('pageTitle');
+		let heading=document.getElementById('titleText');
+		let img=document.getElementById('pageTitle');
+		let body=document.getElementById('bodyText');
 		title.innerHTML=dic.title;
 		heading.innerHTML=dic.title;
 		img.src='../../images/'+dic.img+'.png';
