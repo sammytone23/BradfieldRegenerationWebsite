@@ -72,11 +72,12 @@
 	function load(){
 		let num=Number(getQueryVariable('num'))
 		loadJSON(function(response) {
-			console.log(response)
+			// console.log(response)
 			if (response!="[{\"Nothing\"}]"){
 				lis= JSON.parse(response)
 				try{
 					console.log(lis[num]);
+					setText(lis[num])
 
 				}
 				catch(err){
