@@ -9,12 +9,12 @@
 		<div class="container">
 			<div class="header">
 				<div class="homeButton"><a href="../../index.html" class="homeLink"><img src="../../images/home.png" class="homeButtonImg"></a></div>
-				<div class="title"><h1 class="titleText">Something went wrong <3</h1></div>
+				<div class="title"><h1 id="titleText">Something went wrong <3</h1></div>
 				<div class="paddingBox"></div>
 			</div>
 			<div class="body">
-				<div class="bodyImgBox"><img src="../../images/0.png" class="bodyImg"></div>
-				<div class="bodyText">
+				<div class="bodyImgBox"><img src="../../images/0.png" id="bodyImg"></div>
+				<div id="bodyText">
 					Something went wrong <3
 				</div>
 			</div>
@@ -25,6 +25,18 @@
 
 <script type="text/javascript">
 	
+	function setText(dic){
+		let title=document.getObjectById('pageTitle');
+		let heading=document.getObjectById('titleText');
+		let img=document.getObjectById('pageTitle');
+		let body=document.getObjectById('bodyText');
+		title.innerHTML=dic.title;
+		heading.innerHTML=dic.title;
+		img.src='../../images/'+dic.img+'.png';
+		body.innerHTML=dic.body;
+
+	}
+
 	function loadJSON(callback) {
 		var xobj = new XMLHttpRequest();
 		xobj.overrideMimeType("application/json");
@@ -61,10 +73,11 @@
 		let num=getQueryVariable('num')
 		loadJSON(function(response) {
 			try{
-				console.log(response)
+				console.log(response[num]);
+
 			}
 			catch(err){
-				console.error(err)
+				console.error(err);
 			}
 		});
 
