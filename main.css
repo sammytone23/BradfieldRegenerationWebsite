@@ -57,7 +57,7 @@ body{
 	text-align: center;
 }
 
-.titleText{
+#titleText{
 	margin:auto;
 	color: #191015;
 }
@@ -80,13 +80,13 @@ body{
 	padding-right: 2%;
 }
 
-.bodyImg{
+#bodyImg{
 	width:100%;
 	height: auto;
 	margin:1%;
 }
 
-.bodyText{
+#bodyText{
 	width:70%;
 	background-color: #8B2F96;
 	color: #FBD9FC;
