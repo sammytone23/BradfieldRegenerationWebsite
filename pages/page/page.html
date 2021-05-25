@@ -70,7 +70,7 @@
 	}
 
 	function load(){
-		let num=getQueryVariable('num')
+		let num=Number(getQueryVariable('num'))
 		loadJSON(function(response) {
 			try{
 				console.log(response[num]);
