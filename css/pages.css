@@ -87,8 +87,25 @@ body{
 }
 
 #bodyText{
-	width:70%;
+	width:50%;
 	background-color: #8B2F96;
 	color: #FBD9FC;
 	padding: 1%;
+}
+
+#peopleRoomBox{
+	width:20%;
+	background-color: #8B2F96;
+	color: #FBD9FC;
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+}
+
+#peopleBox{
+	height: 20%;
+}
+
+#roomBox{
+	height: 20%;
 }
