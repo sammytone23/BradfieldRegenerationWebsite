@@ -92,7 +92,7 @@
 	function reAssign(object,num,img,title,){
 		object.getElementsByClassName('randomLink')[0].href='pages\\page\\page.html?num='+num
 		object.getElementsByClassName('randomImage')[0].src='images\\'+img
-		object.getElementsByClassName('heading')[0].innerHTML=title
+		object.getElementsByClassName('hover')[0].getElementsByClassName('hoverHeading')[0].getElementsByClassName('heading')[0].innerHTML=title
 	}
 
 	function loadJSON(callback) {
