@@ -19,7 +19,8 @@
 				</div>
 				<div id="peopleRoomBox">
 					<div id="peopleBox">The people who contributed to this project were:<br><p id="people"></p></div>
-					<div id="roomBox">You can find this exhibit in room: <p id="room"></p></div>
+					<br>
+					<div id="roomBox"><p>You can find this exhibit in room: <span id="room"></span></p></div>
 				</div>
 			</div>
 		</div>
@@ -42,15 +43,16 @@
 		body.innerHTML=dic.body;
 		room.innerHTML=dic.room;
 		let peopleString='';
-		dic.people.length.sort()
-		dic.people.length.reverse()
+		dic.people.length.sort();
+		dic.people.length.reverse();
 		for (let i = dic.people.length - 1; i >= 0; i--) {
 			if(i+1<dic.people.length){
-				peopleString=peopleString.concat(', ',dic.people[i])
+				peopleString=peopleString.concat(', ',dic.people[i]);
 			}else{
-				peopleString=peopleString.concat(dic.people[i])
+				peopleString=peopleString.concat(dic.people[i]);
 			}
 		}
+		people.innerHTML=peopleString;
 	}
 
 	function loadJSON(callback) {
@@ -93,7 +95,7 @@
 				lis= JSON.parse(response)
 				try{
 					console.log(lis[num]);
-					setText(lis[num])
+					setText(lis[num]);
 
 				}
 				catch(err){
