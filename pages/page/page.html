@@ -8,12 +8,12 @@
 	<body onload='load()'>
 		<div class="container">
 			<div class="header">
-				<div class="homeButton"><a href="../../index.html" class="homeLink"><img src="../../images/home.png" class="homeButtonImg" id="homeButtonImg"></a></div>
+				<div class="homeButton"><a href="../../index.html" class="homeLink"><img src="../../images/home.png" class="homeButtonImg"></a></div>
 				<div class="title"><h1 id="titleText">Something went wrong <3</h1></div>
 				<div class="paddingBox"></div>
 			</div>
 			<div class="body">
-				<div class="bodyImgBox"><img src="../../images/0.png" id="bodyImg"></div>
+				<div class="bodyImgBox"><img src="../../images/loading.png" id="bodyImg"></div>
 				<div id="bodyText">
 					Something went wrong <3
 				</div>
@@ -33,13 +33,13 @@
 	function setText(dic){
 		let title=document.getElementById('pageTitle');
 		let heading=document.getElementById('titleText');
-		let img=document.getElementById('homeButtonImg');
+		let img=document.getElementById('bodyImg');
 		let body=document.getElementById('bodyText');
 		let people=document.getElementById('people');
 		let room=document.getElementById('room');
 		title.innerHTML=dic.title;
 		heading.innerHTML=dic.title;
-		img.src='../../images/'+dic.img+'.png';
+		img.src='../../images/'+dic.img;
 		body.innerHTML=dic.body;
 		room.innerHTML=dic.room;
 		let peopleString='';
