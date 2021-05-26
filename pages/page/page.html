@@ -8,7 +8,7 @@
 	<body onload='load()'>
 		<div class="container">
 			<div class="header">
-				<div class="homeButton"><a href="../../index.html" class="homeLink"><img src="../../images/home.png" class="homeButtonImg"></a></div>
+				<div class="homeButton"><a href="../../index.html" class="homeLink"><img src="../../images/home.png" class="homeButtonImg" id="homeButtonImg"></a></div>
 				<div class="title"><h1 id="titleText">Something went wrong <3</h1></div>
 				<div class="paddingBox"></div>
 			</div>
@@ -33,7 +33,7 @@
 	function setText(dic){
 		let title=document.getElementById('pageTitle');
 		let heading=document.getElementById('titleText');
-		let img=document.getElementById('pageTitle');
+		let img=document.getElementById('homeButtonImg');
 		let body=document.getElementById('bodyText');
 		let people=document.getElementById('people');
 		let room=document.getElementById('room');
