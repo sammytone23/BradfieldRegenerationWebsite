@@ -24,32 +24,27 @@
 						<a href="pages\0\0.html" class="randomLink">
 							<img src="images\0.png" class="randomImage" width="300" height="300">
 							<div class="hover">
-								<div class="hoverHeading"><h3>Heading</h3></div>
-								<div class="hoverText">Text</div>
+								<div class="hoverHeading"><h3 id="heading">Heading</h3></div>
 							</div>
 						</a>
 					</div>
 				</div>
-
 				<div class="randomItem">
 					<div class="container">
 						<a href="pages\0\0.html" class="randomLink">
 							<img src="images\0.png" class="randomImage" width="300" height="300">
 							<div class="hover">
-								<div class="hoverHeading"><h3>Heading</h3></div>
-								<div class="hoverText">Text</div>
+								<div class="hoverHeading"><h3 id="heading">Heading</h3></div>
 							</div>
 						</a>
 					</div>
 				</div>
-
 				<div class="randomItem">
 					<div class="container">
 						<a href="pages\0\0.html" class="randomLink">
 							<img src="images\0.png" class="randomImage" width="300" height="300">
 							<div class="hover">
-								<div class="hoverHeading"><h3>Heading</h3></div>
-								<div class="hoverText">Text</div>
+								<div class="hoverHeading"><h3 id="heading">Heading</h3></div>
 							</div>
 						</a>
 					</div>
@@ -61,32 +56,27 @@
 						<a href="pages\0\0.html" class="randomLink">
 							<img src="images\0.png" class="randomImage" width="300" height="300">
 							<div class="hover">
-								<div class="hoverHeading"><h3>Heading</h3></div>
-								<div class="hoverText">Text</div>
+								<div class="hoverHeading"><h3 id="heading">Heading</h3></div>
 							</div>
 						</a>
 					</div>
 				</div>
-
 				<div class="randomItem">
 					<div class="container">
 						<a href="pages\0\0.html" class="randomLink">
 							<img src="images\0.png" class="randomImage" width="300" height="300">
 							<div class="hover">
-								<div class="hoverHeading"><h3>Heading</h3></div>
-								<div class="hoverText">Text</div>
+								<div class="hoverHeading"><h3 id="heading">Heading</h3></div>
 							</div>
 						</a>
 					</div>
 				</div>
-
 				<div class="randomItem">
 					<div class="container">
 						<a href="pages\0\0.html" class="randomLink">
 							<img src="images\0.png" class="randomImage" width="300" height="300">
 							<div class="hover">
-								<div class="hoverHeading"><h3>Heading</h3></div>
-								<div class="hoverText">Text</div>
+								<div class="hoverHeading"><h3 id="heading">Heading</h3></div>
 							</div>
 						</a>
 					</div>
@@ -99,9 +89,10 @@
 <script type="text/javascript">
 	//randomiser v2
 	
-	function reAssign(object,num,img){
+	function reAssign(object,num,img,title,){
 		object.getElementsByClassName('randomLink')[0].href='pages\\page\\page.html?num='+num
 		object.getElementsByClassName('randomImage')[0].src='images\\'+img
+		object.getElementById('heading').innerHTML=title
 	}
 
 	function loadJSON(callback) {
@@ -142,7 +133,7 @@
 					}while(choices.includes(randomNum)&&x<100);
 					choices[choices.length]=randomNum
 					console.log(choices)
-					reAssign(objectList[i], randomNum,lis[randomNum].img)
+					reAssign(objectList[i], randomNum,lis[randomNum].img,lis[randomNum].title)
 				}
 			}
 		});
