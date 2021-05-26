@@ -127,9 +127,9 @@
 
 	function load(){
 		loadJSON(function(response){
-			console.log(response);
 			if (response!="[{\"Nothing\"}]"){
 				lis= new Array(response);
+				console.log(lis);
 				let objectList = document.getElementsByClassName('randomItem');
 				let i;
 				let choices=[];
