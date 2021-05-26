@@ -4,9 +4,10 @@ import json
 def adddata(data,inputobj):
 	dic={}
 	dic['title']=inputobj['title']
-	dic['file']=inputobj['file']
 	dic['img']=inputobj['img']
 	dic['body']=inputobj['body']
+	dic['people']=inputobj['people']
+	dic['room']=inputobj['room']
 	dic['pos']=len(data)
 	data.append(dic)
 	return data

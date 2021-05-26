@@ -1,1 +1,1 @@
-[{"title": "test", "file": "test", "img": "test", "body": "body", "pos": 0}]
+[{"title": "test", "img": "test", "body": "body", "people":["person1","person2"], "room":"room", "pos": 0}]
