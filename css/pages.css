@@ -87,15 +87,15 @@ body{
 }
 
 #bodyText{
-	width:40%;
+	width:50%;
 	background-color: #8B2F96;
 	color: #FBD9FC;
 	padding: 1%;
 }
 
 #peopleRoomBox{
-	margin-left: 2%;
-	width:27%;
+	margin-left: 1%;
+	width:20%;
 	background-color: #8B2F96;
 	color: #FBD9FC;
 	padding: 1%;
