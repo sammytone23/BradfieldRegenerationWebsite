@@ -130,16 +130,18 @@
 			if (response!="[{\"Nothing\"}]"){
 				lis= new Array(response);
 				alert(response.length)
-				alert(lis.length);
+				console.log(lis.length);
 				let objectList = document.getElementsByClassName('randomItem');
 				let i;
 				let choices=[];
 				let randomNum;
 				for (let i = objectList.length - 1; i >= 0; i--) {
+					let x=0;
 					do{
 						randomNum = Math.floor(Math.random() * lis.length);
 						console.log(randomNum)
-					}while(choices.includes(randomNum));
+						x++
+					}while(choices.includes(randomNum)&&x<100);
 					choices[choices.length]=randomNum
 					console.log(choices)
 					reAssign(objectList[i], randomNum,lis[randomNum].img)
