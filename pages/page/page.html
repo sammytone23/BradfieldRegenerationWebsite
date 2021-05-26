@@ -43,8 +43,8 @@
 		body.innerHTML=dic.body;
 		room.innerHTML=dic.room;
 		let peopleString='';
-		dic.people.length.sort();
-		dic.people.length.reverse();
+		dic.people.sort();
+		dic.people.reverse();
 		for (let i = dic.people.length - 1; i >= 0; i--) {
 			if(i+1<dic.people.length){
 				peopleString=peopleString.concat(', ',dic.people[i]);
