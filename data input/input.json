@@ -1,7 +1,7 @@
 {
-	"title":"Film: Flying Once More",
-	"img":"test",
-	"body":"body",
-	"people":[],
-	"room":"room"
+	"title":"Operations and Logistics",
+	"img":"operationsAndLogistics.PNG",
+	"body":"Events Management and Operations assisted with the planning and organising of the 2021 event.  Our team oversees all aspects of strategic and operational planning and liaises with all relevant authorities and stakeholders.  We hope to ensure that the target audience is engaged and most importantly, we share your vision, energy and commitment.",
+	"people":["Riley McPherson", "Carlos Reyes", "Jessica Twells", "Jess Barnett", "Tanaya Sawant", "Zoe Evans", "Jasmine Haley", "Maria Borras McCrorey", "Tayla Hechter", "Alyssa Bourd", "Skye McKechnie", "Lani Braham"],
+	"room":"Learning Centre"
 }

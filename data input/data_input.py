@@ -22,8 +22,9 @@ with open('../data/data.json','r') as file:
 			inputlis=[x for x in inputFile]
 			inputstr=''.join(inputlis)
 			inputobj=json.loads(inputstr)
-			print(inputobj,data)
+			# print(inputobj,data)
 			data=adddata(data,inputobj)
+			print(inputobj["title"]+' group added')
 			# if inputobj['title'] in data:
 			# 	print('that entry already exists, do you want to overwrite? (y/n)')
 			# 	flag=input('> ')
@@ -37,7 +38,7 @@ with open('../data/data.json','r') as file:
 		print('leave input blank to exit, else check input again')
 		x=input('> ')
 	out=json.dumps(data)
-	print(out)
+	# print(out)
 	# file.write(out)
 with open('../data/data.json','w') as file:
 	file.write(out)
