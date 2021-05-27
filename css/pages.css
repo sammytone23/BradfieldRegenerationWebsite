@@ -23,7 +23,7 @@ div{
 .header{
 	margin:auto;
 	width: 90%;
-	height: 64px;
+	height: 10%;
 	padding:2%;
 	display: flex;
 	flex-direction: row;
