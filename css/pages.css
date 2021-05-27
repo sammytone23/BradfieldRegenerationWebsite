@@ -3,6 +3,15 @@ body{
 	display: inline;
 }
 
+h1{
+	font-family: 'Roboto', sans-serif;
+}
+
+div{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+}
+
 .container{
 	max-width: 96%;
 	height: 80%;
